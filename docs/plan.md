@@ -23,6 +23,7 @@
   - [ ] Howto
 - [ ] Fällor
 - [ ] Menu
+- [ ] Olika rum att slumpa
 ***
 ## Interface
 
