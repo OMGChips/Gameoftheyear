@@ -2,7 +2,7 @@
 ***
 # Abstrakta klasser
 
-- [ ] Abstract Entities
+- [ ] Abstract Characters
   - [ ] Adventurer
   - [ ] Eventuellt Fiender
 ***
@@ -11,7 +11,7 @@
 - [ ] Karta
   - [ ] keys hålla koll vart spelaren varit
   - [ ] Uppdatera kartan
-- [ ] Entities
+- [ ] Characters
   - [ ] Adventurer
     - [ ] gainExperience
     - [ ] showlevelup
