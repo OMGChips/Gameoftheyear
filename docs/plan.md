@@ -18,8 +18,8 @@
   - [ ] damage
   - [ ] isalive
     - [ ] Adventurer
-      - [ ] gainExperience
-      - [ ] showlevelup
+      - [x] gainExperience
+      - [x] levelup
       - [ ] move
       - [x] takeDamage
     - [ ] Eventuell Fiender

@@ -2,7 +2,7 @@ package org.example.characters;
 
 public class Adventurer extends Characters {
 
-    int levelup;
+    int level = 1;
     int experience;
     int experiencetolvl = 100;
 
@@ -17,16 +17,24 @@ public class Adventurer extends Characters {
             System.out.println(name + "took damage! Health is now: " + health);
         } else {
             health = 0;
+            System.out.println(name + "Has fallen!!!!!");
         }
 
     }
 
-    public void experience() {
-        System.out.println(name + "Gained a level, is now level" + level);
+    public void getexperience(int amount) {
+        experience += amount;
+        System.out.println(name + "Gained" + amount + "experience.");
 
         while (experience >= experiencetolvl) {
-            experiencetolvl -= experience;
-            levelup++
+            experience -= experiencetolvl;
+            level++;
+            System.out.println(name + "Leveled up! Your new level is " + level);
+            levelup();
         }
+    }
+    private void levelup() {
+        health += 10;
+        System.out.println(name + "You got" +health + "after leveling");
     }
 }
