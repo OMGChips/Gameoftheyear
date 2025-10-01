@@ -12,11 +12,17 @@
   - [ ] keys hålla koll vart spelaren varit
   - [ ] Uppdatera kartan
 - [ ] Characters
-  - [ ] Adventurer
-    - [ ] gainExperience
-    - [ ] showlevelup
-    - [ ] move
-  - [ ] Eventuell Fiender
+  - [ ] Attack
+  - [ ] hp
+  - [x] name
+  - [ ] damage
+  - [ ] isalive
+    - [ ] Adventurer
+      - [ ] gainExperience
+      - [ ] showlevelup
+      - [ ] move
+      - [x] takeDamage
+    - [ ] Eventuell Fiender
 - [ ] Helper
 - [ ] info
   - [ ] Regler
