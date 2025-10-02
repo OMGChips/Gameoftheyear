@@ -13,7 +13,7 @@
   - [ ] Uppdatera kartan
 - [ ] Characters
   - [ ] Attack
-  - [ ] hp
+  - [x] hp
   - [x] name
   - [ ] damage
   - [ ] isalive
@@ -22,7 +22,10 @@
       - [x] levelup
       - [ ] move
       - [x] takeDamage
-    - [ ] Eventuell Fiender
+    - [ ] Monster
+      - [ ] xpReward
+        - [ ] Boss
+          - [ ] specialattack
 - [ ] Helper
 - [ ] info
   - [ ] Regler

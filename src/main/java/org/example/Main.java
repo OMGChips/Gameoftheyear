@@ -1,9 +1,17 @@
 package org.example;
+import org.example.characters.Adventurer;
+import java.util.Scanner;
+
+
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        Scanner scanner = new Scanner(System.in);
+        Adventurer adventurer = new Adventurer("DefaultName", 100, 20);
+
+        System.out.println("Set the name of your adventurer to take on this foul world: ");
+        adventurer.setName(scanner.nextLine());
+        System.out.println( "Welcome " + adventurer.getName() + " your journey begins here.");
+
+
     }
 }
