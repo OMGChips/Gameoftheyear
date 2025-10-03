@@ -1,5 +1,7 @@
 package org.example;
+
 import org.example.characters.Adventurer;
+
 import java.util.Scanner;
 
 
@@ -10,8 +12,6 @@ public class Main {
 
         System.out.println("Set the name of your adventurer to take on this foul world: ");
         adventurer.setName(scanner.nextLine());
-        System.out.println( "Welcome " + adventurer.getName() + " your journey begins here.");
-
-
+        System.out.println("Welcome " + adventurer.getName() + " your journey begins here.");
     }
 }

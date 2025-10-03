@@ -15,8 +15,9 @@
   - [ ] Attack
   - [x] hp
   - [x] name
-  - [ ] damage
-  - [ ] isalive
+  - [x] damage
+  - [x] isalive
+  - [x] takeDamage
     - [ ] Adventurer
       - [x] gainExperience
       - [x] levelup

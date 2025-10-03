@@ -10,19 +10,7 @@ public class Adventurer extends Characters {
         super(name, maxHealth, damage);
     }
 
-    @Override
-    public void takeDamage(int damage) {
-        System.out.println(getName() + " takes " + damage + " damage");
-        health -= damage;
-        if (isAlive()) {
-            System.out.println(name + " took damage! Health is now: " + health);
-        } else {
-            health = 0;
-            System.out.println(name + " Has fallen!!!!!");
-        }
-    }
-
-    public void gainexperience(int amount) {
+    public void gainExperience(int amount) {
         experience += amount;
         System.out.println(name + " Gained: " + amount + " experience.");
 

@@ -27,12 +27,25 @@ public abstract class Characters {
         return health > 0;
     }
 
-    public abstract void takeDamage(int damage);
+    public void takeDamage(int damage) {
+        health -= damage;
+        if (isAlive()) {
+            System.out.println(name + " took damage! Health is now: " + health);
+        } else {
+            health = 0;
+            System.out.println(name + " Has fallen!!!!!");
+        }
+    }
+public void attack(Characters target) {
+        int damageDealt = attack();
+    System.out.println(name + " attacks " + target.getName() + " for " + damageDealt + "damage!!!");
+    target.takeDamage(damageDealt);
+}
+
 
     public int attack() {
         int min = (int) (damage * 0.6);
         int max = (int) (damage * 1.4);
         return new Random().nextInt( max - min + 1 ) + min;
     }
-
 }
