@@ -4,8 +4,6 @@ import org.example.utils.Helper;
 
 public class Boss extends Monsters {
 
-    private Helper helper;
-
     public Boss(String name, int maxHealth, int damage) {
         super(name, maxHealth, damage);
     }
