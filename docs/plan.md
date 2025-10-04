@@ -2,43 +2,44 @@
 ***
 # Abstrakta klasser
 
-- [ ] Abstract Characters
-  - [ ] Adventurer
-  - [ ] Eventuellt Fiender
+- [x] Abstract Characters
+  - [x] Adventurer
+  - [x] Eventuellt Fiender
 ***
 ## Structure
 
 - [ ] Karta
   - [ ] keys hålla koll vart spelaren varit
   - [ ] Uppdatera kartan
-- [ ] Characters
-  - [ ] Attack
+- [x] Characters
+  - [x] Attack
   - [x] hp
   - [x] name
   - [x] damage
   - [x] isalive
   - [x] takeDamage
-    - [ ] Adventurer
+    - [x] Adventurer
       - [x] gainExperience
       - [x] levelup
       - [ ] move
       - [x] takeDamage
-    - [ ] Monster
-      - [ ] xpReward
-        - [ ] Boss
-          - [ ] specialattack
-- [ ] Helper
-- [ ] info
-  - [ ] Regler
-  - [ ] Howto
-- [ ] Fällor
-- [ ] Menu
-- [ ] Olika rum att slumpa
+      - [ ] Weapon
+    - [x] Monster
+      - [x] xpReward
+        - [x] Boss
+          - [x] specialattack
+- [x] Helper
+- [x] info
+  - [x] Regler
+  - [x] Howto
+- [x] Fällor
+- [x] Menu
+- [x] Olika rum att slumpa
 ***
 ## Interface
 
-- [ ] Helper
-  - [ ] Tid
+- [x] Helper
+  - [x] Tid
 
 ***
 ### Info
