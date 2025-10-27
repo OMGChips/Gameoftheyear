@@ -14,17 +14,12 @@ import java.util.Scanner;
 
 public class GameStart {
 
-    private final Weapon weapon;
-    private final Adventurer adventurer;
-    private final Scanner scanner;
-    private final Helper helper;
+    private final Weapon weapon = new Weapon("Whip", 15);
+    private final Adventurer adventurer = new Adventurer("DefaultName", 100, 10);
+    private final Scanner scanner = new Scanner(System.in);
+    private final Helper helper = new Helper();
 
     public GameStart() {
-
-        weapon = new Weapon("Whip", 40);
-        scanner = new Scanner(System.in);
-        helper = new Helper();
-        adventurer = new Adventurer("DefaultName", 100, 200);
         adventurer.setWeapon(weapon);
     }
 
@@ -99,7 +94,7 @@ public class GameStart {
                     break;
                 }
             } else if (input.equals("status")) {
-                System.out.println("Status of your adventurer " + "Damage: "+ adventurer.getDamage() + " Maxhealth: " + adventurer.getMaxHealth() + " Experience: " + adventurer.getExperience() + " Level: " + adventurer.getLevel() + " Bonus weapon damage: " + weapon.getBonusDamage() + " Weapon name: "+ weapon.getName());
+                System.out.println("Status of your adventurer " + "Damage: "+ adventurer.getDamage() + " Max health: " + adventurer.getMaxHealth() + " Experience: " + adventurer.getExperience() + " Level: " + adventurer.getLevel() + " Bonus weapon damage: " + weapon.getBonusDamage() + " Weapon name: "+ weapon.getName());
             } else {
                 Room room = RoomRandomizer.randomRoom();
                 Monsters monster = room.enter(adventurer);
@@ -124,7 +119,7 @@ public class GameStart {
 
             if (!monsters.isAlive()) {
                 System.out.println(monsters.getName());
-                adventurer.gainExperience(50);
+                adventurer.gainExperience(75);
                 break;
             }
 
